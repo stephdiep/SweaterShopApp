@@ -11,6 +11,14 @@
 		22D18FD127751630007E2D01 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D18FD027751630007E2D01 /* ContentView.swift */; };
 		22D18FD327751632007E2D01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22D18FD227751632007E2D01 /* Assets.xcassets */; };
 		22D18FD627751632007E2D01 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22D18FD527751632007E2D01 /* Preview Assets.xcassets */; };
+		22D18FDD27751640007E2D01 /* PaymentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D18FDC27751640007E2D01 /* PaymentButton.swift */; };
+		22D18FE027751BFF007E2D01 /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D18FDF27751BFF007E2D01 /* ProductCard.swift */; };
+		22D18FE327751C25007E2D01 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D18FE227751C25007E2D01 /* Product.swift */; };
+		22FF1287278357E700E995FC /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FF1286278357E700E995FC /* CartView.swift */; };
+		22FF128927835C2100E995FC /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FF128827835C2100E995FC /* CartManager.swift */; };
+		22FF128B27835C9100E995FC /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FF128A27835C9100E995FC /* CartButton.swift */; };
+		22FF128D2783602400E995FC /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FF128C2783602400E995FC /* ProductRow.swift */; };
+		22FF1290278386F900E995FC /* PaymentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FF128F278386F900E995FC /* PaymentHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,15 @@
 		22D18FD027751630007E2D01 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		22D18FD227751632007E2D01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22D18FD527751632007E2D01 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		22D18FDC27751640007E2D01 /* PaymentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentButton.swift; sourceTree = "<group>"; };
+		22D18FDF27751BFF007E2D01 /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
+		22D18FE227751C25007E2D01 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		22FF1286278357E700E995FC /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		22FF128827835C2100E995FC /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
+		22FF128A27835C9100E995FC /* CartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
+		22FF128C2783602400E995FC /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
+		22FF128E27837D1300E995FC /* SweaterShopApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SweaterShopApp.entitlements; sourceTree = "<group>"; };
+		22FF128F278386F900E995FC /* PaymentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +68,13 @@
 		22D18FCD27751630007E2D01 /* SweaterShopApp */ = {
 			isa = PBXGroup;
 			children = (
+				22FF128E27837D1300E995FC /* SweaterShopApp.entitlements */,
 				22D18FCE27751630007E2D01 /* SweaterShopAppApp.swift */,
-				22D18FD027751630007E2D01 /* ContentView.swift */,
+				22FF128827835C2100E995FC /* CartManager.swift */,
+				22FF128F278386F900E995FC /* PaymentHandler.swift */,
+				22D18FE4277522FC007E2D01 /* Views */,
+				22D18FDE27751BF5007E2D01 /* Components */,
+				22D18FE127751C1D007E2D01 /* Models */,
 				22D18FD227751632007E2D01 /* Assets.xcassets */,
 				22D18FD427751632007E2D01 /* Preview Content */,
 			);
@@ -65,6 +87,34 @@
 				22D18FD527751632007E2D01 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		22D18FDE27751BF5007E2D01 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				22D18FDF27751BFF007E2D01 /* ProductCard.swift */,
+				22FF128A27835C9100E995FC /* CartButton.swift */,
+				22FF128C2783602400E995FC /* ProductRow.swift */,
+				22D18FDC27751640007E2D01 /* PaymentButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		22D18FE127751C1D007E2D01 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				22D18FE227751C25007E2D01 /* Product.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		22D18FE4277522FC007E2D01 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				22D18FD027751630007E2D01 /* ContentView.swift */,
+				22FF1286278357E700E995FC /* CartView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +187,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22FF1287278357E700E995FC /* CartView.swift in Sources */,
+				22D18FDD27751640007E2D01 /* PaymentButton.swift in Sources */,
 				22D18FD127751630007E2D01 /* ContentView.swift in Sources */,
+				22D18FE327751C25007E2D01 /* Product.swift in Sources */,
+				22FF128927835C2100E995FC /* CartManager.swift in Sources */,
+				22FF1290278386F900E995FC /* PaymentHandler.swift in Sources */,
 				22D18FCF27751630007E2D01 /* SweaterShopAppApp.swift in Sources */,
+				22FF128D2783602400E995FC /* ProductRow.swift in Sources */,
+				22FF128B27835C9100E995FC /* CartButton.swift in Sources */,
+				22D18FE027751BFF007E2D01 /* ProductCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,12 +324,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SweaterShopApp/SweaterShopApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SweaterShopApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 68WS2M23VC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SweaterShopApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -295,12 +355,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SweaterShopApp/SweaterShopApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SweaterShopApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 68WS2M23VC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SweaterShopApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
