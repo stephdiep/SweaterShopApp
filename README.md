@@ -2,7 +2,7 @@
 <h1 align="center">
   🧶 Shopping App tutorial
 </h1>
-Source code for the Shopping app built in the <a href="https://youtu.be/fwG1pDgytDc">YouTube tutorial</a>
+Source code for the Shopping app built in the YouTube tutorial (<a href="https://youtu.be/fwG1pDgytDc">Part 1</a> , <a href="https://youtu.be/1kRqM7F3AIQ">Part 2</a>)
 
 &nbsp;
 
